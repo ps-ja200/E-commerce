@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - LARA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">LARA</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search"><i class="fas fa-search"></i></a>
+                <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#account"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="container">
+                <h1>Discover Our Collection</h1>
+                <p>Elevate your style with our premium selection</p>
+            </div>
+        </section>
+
+        <section class="shop-products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="images/product1.jpg" alt="Black Blazer">
+                        <h3>Black Blazer</h3>
+                        <p class="price">&#8377;1,999.99</p>
+                        <button class="cta-button" onclick="addToCart('product1_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product2.png" alt="White Shirt">
+                        <h3>White Shirt</h3>
+                        <p class="price">&#8377;3,499.99</p>
+                        <button class="cta-button" onclick="addToCart('product2_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product3.png" alt="Black Pant">
+                        <h3>Black Pant</h3>
+                        <p class="price">&#8377;1,299.99</p>
+                        <button class="cta-button" onclick="addToCart('product3_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product4.jpg" alt="Blue Tuxedo">
+                        <h3>Blue Tuxedo</h3>
+                        <p class="price">&#8377;2,599.99</p>
+                        <button class="cta-button" onclick="addToCart('product4_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/tie_1.jpg" alt="Red and White Stripes Tie">
+                        <h3>Red and White Stripes Tie</h3>
+                        <p class="price">&#8377;3,999.99</p>
+                        <button class="cta-button" onclick="addToCart('tie1_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/belt_1.jpg" alt="Black Leather Belt">
+                        <h3>Black Leather Belt</h3>
+                        <p class="price">&#8377;2,599.99</p>
+                        <button class="cta-button" onclick="addToCart('belt1_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/tie_2.jpg" alt="Black Elegant Tie">
+                        <h3>Black Elegant Tie</h3>
+                        <p class="price">&#8377;1,599.99</p>
+                        <button class="cta-button" onclick="addToCart('tie2_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/belt_2.jpg" alt="Brown Formal Belt">
+                        <h3>Brown Formal Belt</h3>
+                        <p class="price">&#8377;3,199.99</p>
+                        <button class="cta-button" onclick="addToCart('belt2_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/perfume_1.jpg" alt="Rose Perfume">
+                        <h3>Rose Perfume</h3>
+                        <p class="price">&#8377;2,999.99</p>
+                        <button class="cta-button" onclick="addToCart('perfume1_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/perfume_2.jpg" alt="Blue Perfume">
+                        <h3>Blue Perfume</h3>
+                        <p class="price">&#8377;3,499.99</p>
+                        <button class="cta-button" onclick="addToCart('perfume2_id', 1)">Add to Cart</button>
+                    </div>
+        
+                    <!-- New Watch products -->
+                    <div class="product-card">
+                        <img src="images/watch_1.jpg" alt="Luxury Watch">
+                        <h3>Luxury Watch</h3>
+                        <p class="price">&#8377;5,999.99</p>
+                        <button class="cta-button" onclick="addToCart('watch1_id', 1)">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/sports_watch.jpg" alt="Sports Watch">
+                        <h3>Sports Watch</h3>
+                        <p class="price">&#8377;4,499.99</p>
+                        <button class="cta-button" onclick="addToCart('sports_watch_id', 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Get in Touch</h3>
+                    <p>Seawoods, Navi Mumbai</p>
+                    <p><a href="mailto:praveer1011@gmail.com">praveer1011@gmail.com</a></p>
+                    <p><a href="tel:+919999999999">+91 9999999999</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
